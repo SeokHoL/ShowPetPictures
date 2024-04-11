@@ -13,12 +13,14 @@
         android:layout_height="wrap_content"
         android:text="@string/textSelect"
         android:textSize="@dimen/textSizeLarge"/>
-    <CheckBox
+    <Switch
         android:id="@+id/checkStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkStart"
-        android:textSize="@dimen/textSizeMedium"/>
+        android:textSize="@dimen/textSizeMedium"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
 
     <LinearLayout
         android:id="@+id/linearSub"
@@ -56,15 +58,10 @@
             android:layout_height="wrap_content"
             android:text="@string/radioBunny"
             android:textSize="@dimen/marginMedium"
+
         />
     </RadioGroup>
-    <Button
-        android:id="@+id/btnDone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnDone"
-        android:layout_marginBottom="@dimen/marginMedium"
-        />
+
     <ImageView
         android:id="@+id/imgV"
         android:layout_width="match_parent"
@@ -72,6 +69,17 @@
         android:src="@drawable/puppy"
         android:scaleType="fitXY"/>
     </LinearLayout>
-
+    <Button
+        android:id="@+id/btnFinsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:text="@string/btnFinsh"/>
+    <Button
+        android:id="@+id/btnInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:text="@string/btnInit"/>
 
 </LinearLayout>
